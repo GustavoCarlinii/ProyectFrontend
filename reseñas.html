@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header" class="header"></header>
+    
+    <section id = "sections" class="sections">
+        <section class="reviws">
+            <h3>Battios</h3>
+            <img src="./public/img/battios.png" alt="img" width="200px">
+            <p>Una experiencia bastante buena pero...</p>
+            <p><a href="./battios.html">ver mas</a></p>
+        </section>
+        <section class="reviws">
+            <h3>4 Elementos</h3>
+            <img src="./public/img/battios.png" alt="img" width="200px">
+            <p>Una experiencia bastante buena pero...</p>
+            <p><a href="./battios.html">ver mas</a></p>
+        </section>
+
+    </section>
+
+    <footer id = "footer" class="footer"></footer>
+    <script>
+      async function includeHTML(id, file) {
+        const res = await fetch(file);
+        const html = await res.text();
+        document.getElementById(id).innerHTML = html;
+      }
+
+      includeHTML("header", "/components/header.html");
+      includeHTML("footer", "/components/footer.html");
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header id="header" class="header"></header>
+    <main>
+      <div class="main-part">
+        <p>
+          ¿Conoces los lugares mas atractivos en la ciudad de Rafaela para ir a
+          merendar o desayunar?
+        </p>
+        <p> El proyecto nace de la idea de que mas gente pueda conocer sobre la oferta gastronomica en la ciudad, empezo como un hobby
+            de amigos que les gustaba ir a cafeterias a ver que tal y ahora evoluciona en una wiki para que no sea necesario que pases malos momentos,
+            vayas a lugares feos o caros, si no que ya tengas una idea previa de lo que la ciudad tiene para ofrecer
+        </p>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+    <script>
+      async function includeHTML(id, file) {
+        const res = await fetch(file);
+        const html = await res.text();
+        document.getElementById(id).innerHTML = html;
+      }
+
+      includeHTML("header", "/components/header.html");
+      includeHTML("footer", "/components/footer.html");
+    </script>
+  </body>
+</html>
