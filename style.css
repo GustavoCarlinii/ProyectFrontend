@@ -1,27 +1,31 @@
-body{
-    background-color: blanchedalmond;
-    font-family:'Courier New', Courier, monospace;
+body {
+  background-color: blanchedalmond;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-section{
-    display: flex;
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  justify-content: center;
 }
 
+.review-card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
 
+.review-card:hover {
+  transform: translateY(-4px);
+}
 
-.reviws {
-     border: 1px;
-     flex-wrap: wrap;
-     gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    background-color: white;
-    border: 1px solid #ccc;
-    max-width: auto;
-    max-height: auto;
-    margin:auto;
-
+.review-card img {
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
