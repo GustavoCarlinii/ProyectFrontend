@@ -8,7 +8,7 @@ body {
    font-family: 'Roboto Mono', monospace;
 }
 
-/* Encabezado */
+/* HEADER - ENCABEZADO */
 header {
   background-color: #111;
   padding: 1rem 2rem;
@@ -45,10 +45,16 @@ header {
 }
 
 .navbar a:hover {
-  color: #ffc107; /* dorado café */
+  color: #ffc107; 
 }
 
-/* Grilla de reseñas */
+
+/* VISTA INICIO */
+.main-part{
+  padding: 2rem;
+}
+
+/* GRILLAS DE RESEÑAS */
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -80,25 +86,7 @@ header {
   margin-bottom: 12px;
 }
 
-/* Footer */
-footer {
-  background-color: #111;
-  color: #ddd;
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  border-top: 1px solid #333;
-}
 
-footer span {
-  display: block;
-  margin-top: 4px;
-  color: #aaa;
-}
-
-p a {
-    color: whitesmoke;
-}
 
 .menu, .cerrar-menu{
   display: none;
@@ -147,6 +135,21 @@ p a {
   margin-bottom: 1rem;
 }
 
+/* FOOTER - PIE DE PAGINA */
+footer {
+  background-color: #111;
+  color: #ffc107;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+footer span {
+  display: block;
+  margin-top: 4px;
+  color: #ffc107;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -177,6 +180,7 @@ p a {
     align-items: flex-end;
   }
 
+  /* BOTON HAMBURGUESA */
   .menu,
   .cerrar-menu {
     display: block;
@@ -187,7 +191,7 @@ p a {
     cursor: pointer;
   }
 
-  /* RESPOSIVE RESEÑAs */
+  /* RESPOSIVE RESEÑAS*/
 
   .review-layout {
     flex-direction: column;
