@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reseña - Battios</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    
+    <header id="header" class="header"></header>
+
+    <main class="review-detail">
+        <div class="review-layout">
+            <div class="review-text">
+                <section class="review-header">
+                    <h1>Battios</h1>
+                    <p class="location">Güemes 846, S2300 Rafaela, Santa Fe</p>
+                </section>
+
+                <section class="review-summary">
+                    <h2>Resumen general</h2>
+                    <p>
+                        El lugar está bastante bien ubicado, ofreciendo la posibilidad de encontrar lugar para
+                        estacionar con relativa facilidad. Una vez dentro, podemos decir que fue bastante bullicioso. La
+                        acústica en general fue deficiente, por lo que debimos hablar en un tono de voz elevado.
+                    </p>
+                </section>
+
+                <section class="review-experience">
+                    <h2>Experiencia gastronómica</h2>
+                    <p>
+                        La carta ofrece un menú amplio, incluyendo bebidas no tan comunes como matchas, y muchas
+                        opciones de café frío y caliente. Al ingresar, se puede observar todo lo que tienen disponible,
+                        con opciones para los amantes de lo salado y lo dulce.
+                    </p>
+                    <p>
+                        En mi caso, pedí un alfajor de chocolate relleno con dulce de leche y cerezas, acompañado de un
+                        cortado. La calidad fue buena; si bien el café no destacó especialmente, cumplió con lo
+                        esperado. Lo mismo puedo decir del alfajor.
+                    </p>
+                </section>
+
+                <section class="review-info">
+                    <h2>Precios y atención</h2>
+                    <p>
+                        Gasté aproximadamente $8000, lo cual considero un precio acorde para una merienda. En cuanto a
+                        la atención, hubo una demora de unos 20 minutos desde el pedido hasta que trajeron la comida. La
+                        dinámica del lugar implica acercarse al mostrador, hacer el pedido según lo disponible en
+                        vidriera, y luego te lo acercan a la mesa.
+                    </p>
+                </section>
+
+                <section class="review-ambience">
+                    <h2>Ambiente del lugar</h2>
+                    <p>
+                        El local está bien amueblado y, dejando de lado la acústica deficiente, el espacio interior está
+                        muy bien preparado para consumir dentro del local. Tiene un sector adentro del lugar para
+                        fumadores, lo que permite que
+                        ahora que en climas frios no te veas en la obligacion de salir afuera.
+                    </p>
+                </section>
+            </div>
+
+            <div class="review-map">
+                <h2>Ubicación en el mapa</h2>
+                <!-- Aquí insertás la imagen del mapa estático usando una API -->
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=-31.2585,-61.4866&zoom=16&size=600x300&markers=color:red%7Clabel:B%7C-31.2585,-61.4866&key=TU_API_KEY"
+                    alt="Mapa estático de Battios" />
+                <p><small>Ubicación generada mediante la API de Google Maps</small></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+    <script src="./main.js"></script>
 </body>
+
 </html>

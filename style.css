@@ -104,6 +104,51 @@ p a {
   display: none;
 }
 
+
+/* VISTA -  RESEÑAS */
+.review-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.review-text {
+  flex: 1 1 60%;
+}
+
+.review-map {
+  flex: 1 1 35%;
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
+}
+
+.review-map img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.review-detail h2 {
+  color: #ffc107;
+  margin-top: 2rem;
+}
+
+.review-detail h1 {
+  font-size: 2.2rem;
+  color: #f8f8f8;
+  margin-bottom: 0.5rem;
+}
+
+.review-detail p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
+
 @media screen and (max-width: 600px) {
   .navbar {
     opacity: 0;
@@ -141,4 +186,22 @@ p a {
     font-size: 2rem;
     cursor: pointer;
   }
+
+  /* RESPOSIVE RESEÑAs */
+
+  .review-layout {
+    flex-direction: column;
+  }
+
+  .review-map {
+    order: 2;
+  }
+
+  .review-text {
+    order: 1;
+  }
+
+
+ 
+
 }
