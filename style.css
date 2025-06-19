@@ -143,6 +143,75 @@ header {
   margin-bottom: 1rem;
 }
 
+
+/*FORMULARIO */
+
+.formulario {
+      background-color: #2a2a2a;
+      color: #f0f0f0;
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 20px rgba(255, 193, 7, 0.1);
+    }
+
+    .formulario h2 {
+      text-align: center;
+      color: #ffc107;
+      margin-bottom: 1.5rem;
+    }
+
+    .campo {
+      margin-bottom: 1.5rem;
+    }
+
+    .campo label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .campo input,
+    .campo textarea,
+    .campo select {
+      width: 100%;
+      padding: 0.6rem;
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      border: 1px solid #444;
+      border-radius: 6px;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    .campo textarea {
+      resize: vertical;
+    }
+
+    .error {
+      color: #ff5252;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+    }
+
+    .formulario button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #ffc107;
+      border: none;
+      color: #1c1c1c;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .formulario button:hover {
+      background-color: #e6b800;
+    }
+
+
+
 /* FOOTER - PIE DE PAGINA */
 footer {
   background-color: #111;
